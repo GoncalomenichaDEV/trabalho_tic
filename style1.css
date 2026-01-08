@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #111;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #111;
+    text-transform: uppercase;
+}
+
+.tabela-rz4 {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tabela-rz4 thead {
+    background-color: #111;
+    color: white;
+}
+
+.tabela-rz4 th {
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.tabela-rz4 td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.tabela-rz4 tbody tr:hover {
+    background-color: #f2f2f2;
+}
+
+.coluna-foto img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    display: block;
+    margin: 0 auto;
+}
+
+.coluna-nome {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.coluna-preco {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #27ae60;
+}
+
+/* --- Vantagens --- */
+.vantagens {
+    display: flex;
+    justify-content: space-between; /* Espalha os itens */
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.item-vantagem {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%; /* Para ocuparem o mesmo espaço */
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.item-vantagem:hover {
+    transform: translateY(-5px); /* Sobe um bocadinho ao passar o rato */
+}
+
+.icone {
+    font-size: 2.5rem; /* Tamanho do emoji */
+    margin-bottom: 10px;
+}
+
+.item-vantagem h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #111;
+}
+
+.item-vantagem p {
+    font-size: 0.9rem;
+    color: #666;
+}
+/* --- Footer (Rodapé) --- */
+footer {
+    background-color: #000; /* Preto absoluto estilo JD */
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px; /* Garante espaço entre a tabela e o fim */
+    border-top: 4px solid #333; /* Uma linha subtil no topo */
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+}
+
+footer strong {
+    font-weight: bold;
+}
+
+/* Estilo para a frase "Inspirado em..." */
+.nota-inspiracao {
+    color: #888; /* Cinzento para não chamar tanta atenção como o nome da tua marca */
+    font-size: 0.85rem; /* Letra ligeiramente mais pequena */
+    margin-top: 10px;
+}
